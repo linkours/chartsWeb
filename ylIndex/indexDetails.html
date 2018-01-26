@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html  class="kol-style">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta name=viewport content="width=device-width,initial-scale=1">
+    <meta name="keywords" content=""/>
+    <meta name="description" content="" />
+    <link rel="shortcut icon" href="../img/fav.ico">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+	<title>云略大数据</title>
+	<link rel="stylesheet" href="../css/index.css">
+	<link rel="stylesheet" href="../css/bootstrap-datetimepicker.min.css" />
+	<meta name="viewport"content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+</head>
+<body style="background: #cbd5e3;">
+<nav class="navbar navbar-inverse navbar-fixed-top" style="min-height:66px;background:#1f74f2;">
+    <div class="container" style="width: 1220px!important;">
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        	<div class="topDetSer" id="search-form">
+        	</div>
+            <ul class="nav navbar-nav indexUlBox indexDetail" id="menu">
+                <li><a href="../index.html">首页</a><span></span></li>
+                <li><a href="../movie.html">电影</a><span></span></li>
+                <li><a href="../tv.html">电视剧</a><span></span></li>
+              	<li><a href="../variety.html" >综艺</a><span></span></li>
+              	<li class="kolLi">
+              		<a href="javascript:;" >KOL</a><span></span>
+              		<ul>
+              			<li><a href="../kol/wxList.html">微信榜单</a></li>
+              			<li><a href="../kol/wbList.html">微博榜单</a></li>
+              			<li><a href="../kol/whList.html">网红榜单</a></li>
+              		</ul>
+              	</li>
+              	<li><a href="../ylIndex/ylIndex.html" >云略指数</a><span></span></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div class="container detailsIndex" style="width: 100%!important;">
+	<div class="tabBoxs">
+		<div class="row">
+			<div class="col-md-3 col-sm-3 col-xs-3 pubTab actTab"><span class="glyphicon glyphicon-signal"></span> 热词趋势</div>
+			<div class="col-md-3 col-sm-3 col-xs-3 pubTab"><span class="glyphicon glyphicon-indent-left"></span> 实时趋势</div>
+			<div class="col-md-3 col-sm-3 col-xs-3 pubTab"><span class="glyphicon glyphicon-globe"></span> 地域解读</div>
+			<div class="col-md-3 col-sm-3 col-xs-3 pubTab"><span class="glyphicon glyphicon-user"></span> 属性分析</div>
+		</div>
+	</div>
+</div>
+<div class="container indexMain">
+	<div class="row">
+		<div class="keyDatas">
+			<div class="hasKey">欢乐</div>
+			<ul class="searchUl">
+				<li class="hasKeyLi pubKeyLi">
+					<input value="欢乐" readonly="readonly"/>
+				</li>
+				<li class="pubKeyLi" id="addKeyOne">
+				</li>
+				<li class="pubKeyLi" id="addKeyTwo">
+				</li>
+				<li class="pubKeyLi timesLi">
+					<input type="text" name="format_day" class="form-control js_date time_start"  readonly=""><i class="glyphicon glyphicon-calendar"></i>
+				</li>
+				<li class="pubKeyLi timesword">
+					至
+				</li>
+				<li class="pubKeyLi timesLi lastTimes">
+					<input type="text" name="format_day" class="form-control js_date time_end"  readonly=""><i class="glyphicon glyphicon-calendar"></i>
+				</li>
+				<li class="pubKeyLi vsBtnLi">
+					对 比
+				</li>
+			</ul>
+		</div>
+		<div style="clear: both;"></div>
+		<div class="chartDetails">
+			<div class="chartHead">
+				热词趋势
+				<span>？</span>
+				<div class="hideTips">
+					图表默认显示到今天为止一个月的热词数据，如要查看不同时间段的数据，请设置起始时间和结束时间。
+				</div>
+			</div>
+			<div class="tabMain">
+				<div class="col-md-12 col-sm-12 col-xs-12 tabCharts">
+					<ul class="nav nav-tabs indexKey">
+						<li class="active firstLi" data-title="wxIndex">微信趋势</li>
+						<li data-title="wbIndex">微博趋势</li>
+						<li data-title="movIndex">视频趋势</li>
+						<li data-title="whIndex">网红趋势</li>
+					</ul>
+				</div>
+			</div>
+			<div class="chartsMain" id="chartsBox">
+				
+			</div>
+		</div>
+	</div>
+</div>
+<script src="../js/jquery.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/echarts.min.js" ></script>
+<script src="../js/ylIndex.js" ></script>
+<script src="../js/bootstrap-datetimepicker.min.js" ></script>
+<script src="../js/bootstrap-datetimepicker.zh-CN.js" ></script>
+<script src="../js/index-charts.js" ></script>
+</body>
+</html>

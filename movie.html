@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta name=viewport content="width=device-width,initial-scale=1">
+    <meta name="keywords" content=""/>
+    <meta name="description" content="" />
+    <link rel="shortcut icon" href="img/logo3.png">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/footer.css"/>
+	<title>云略大数据</title>
+	<link rel="stylesheet" href="css/index.css">
+	<meta name="viewport"content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+</head>
+<body>
+<nav class="navbar navbar-inverse navbar-fixed-top" style="min-height:66px;background-color:#eee;">
+    <div class="container" style="width: 1220px!important;">
+        <div class="navbar-header">
+            <img style="width:160px;height:40px;margin-top: 13px" class="brand" alt="Brand" src="img/logo.png">
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav" style="margin-left:50px;" id="menu">
+                <li><a href="index.html">首页</a><span></span></li>
+                <li><a href="movie.html">电影</a><span class="actSpan"></span></li>
+                <li><a href="tv.html">电视剧</a><span></span></li>
+              	<li><a href="variety.html" >综艺</a><span></span></li>
+              	<li class="kolLi">
+              		<a href="javascript:;" >KOL</a><span></span>
+              		<ul>
+              			<li><a href="kol/wxList.html">微信榜单</a></li>
+              			<li><a href="kol/wbList.html">微博榜单</a></li>
+              			<li><a href="kol/whList.html">网红榜单</a></li>
+              		</ul>
+              	</li>
+              	<li><a href="ylIndex/ylIndex.html" >云略指数</a><span></span></li>
+            </ul>
+          <div class="vipBox">
+          	<div class="labelBox">
+          		<label> <a href="login.html">登 陆</a> </label> <label>|</label> 
+          		<label> <a href="signup.html">注 册</a> </label>
+          	</div>
+          	<div class="infoBox" style="display: none;">
+          		<div class="userInfo"><a href="#" class="pubA"><span class="glyphicon glyphicon-user"></span> 240788020@qq.com</a></div>
+          		<div class="setDiv"><a href="#" class="pubA"><span class="setspan"><span class="glyphicon glyphicon-cog"></span> 个人中心</span></a> <a href="#" class="pubA"><span class="bakeOut"> 退 出</span></a></div>
+          	</div>
+          </div>
+          <div class="navbar-form navbar-right search-form search-frame " role="search">
+            <div class="form-group search-frame-in" >
+              <input style="" type="text" class="form-control head_s"  placeholder="电影、电视剧、综艺">
+              <span style="margin-top: -4px;" class="glyphicon glyphicon-search search-btn ie-hank head_search searchBtn" aria-hidden="true"></span>
+              </div>
+            <ul class="list-unstyled search-list search-nav-relocation row" id="sousuo_ciname">
+              <div id="sousuo">
+              </div>
+            </ul>
+          </div>
+        </div>
+    </div>
+</nav>
+<section class="listSec">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12 col-sm-12 col-xs-12">
+				<div class="row">
+					<div id="fourss" >
+					  <div class="container-fluid movieList">
+					    <div class="fluid-add">
+					      <div class="container">
+					        <h3 class="page-h3"><span>电影列表</span></h3>
+					        <div id="carousel-hot" class="carousel slide" data-ride="carousel">
+					          <div class="carousel-inner" role="listbox">
+					            <div class="item active">
+					              <ul class="list-inline list-inline-resize">
+					                <li>
+					                  <a class="u_cover" href="details.html">
+					                    <img src=http://img01.wiseweb.com.cn/view/movie_poster_cover/lpst/public/p2459723975.jpg>
+					                    <div class="u_text">查看详情</div>
+					                    <div class="u_mask"></div>
+					                    <div class="score"><span class="score_num">6.7</span></div>
+					                  </a>
+					                  <h4>加勒比海盗5：死无...<br>
+					                  </h4>
+					                </li>
+					                <li>
+					                  <a class="u_cover" href="details.html">
+					                    <img src=http://img01.wiseweb.com.cn/view/movie_poster_cover/lpst/public/p2460006593.jpg>
+					                    <div class="u_text">查看详情</div>
+					                    <div class="u_mask"></div>
+					                    <div class="score"><span class="score_num">6.7</span></div>
+					                  </a>
+					                  <h4>神奇女侠<br>
+					                  </h4>
+					                </li>
+					                <li>
+					                  <a class="u_cover" href="details.html">
+					                    <img src=http://img01.wiseweb.com.cn/view/movie_poster_cover/lpst/public/p2456180253.jpg>
+					                    <div class="u_text">查看详情</div>
+					                    <div class="u_mask"></div>
+					                    <div class="score"><span class="score_num">6.7</span></div>
+					                  </a>
+					                  <h4>喜欢你<br>
+					                  </h4>
+					                </li>
+					                <li>
+					                  <a class="u_cover" href="details.html">
+					                    <img src=http://img01.wiseweb.com.cn/view/movie_poster_cover/lpst/public/p2444256500.jpg>
+					                    <div class="u_text">查看详情</div>
+					                    <div class="u_mask"></div>
+					                    <div class="score"><span class="score_num">6.7</span></div>
+					                  </a>
+					                  <h4>速度与激情8<br>
+					                  </h4>
+					                </li>
+					                <li>
+					                  <a class="u_cover" href="details.html">
+					                    <img src=http://img01.wiseweb.com.cn/view/movie_poster_cover/lpst/public/p2457983084.jpg>
+					                    <div class="u_text">查看详情</div>
+					                    <div class="u_mask"></div>
+					                    <div class="score"><span class="score_num">9.7</span></div>
+					                  </a>
+					                  <h4>摔跤吧！爸爸<br>
+					                  </h4>
+					                </li>
+					                <li>
+					                  <a class="u_cover" href="details.html">
+					                    <img src=http://img01.wiseweb.com.cn/view/movie_poster_cover/lpst/public/p2455261804.jpg>
+					                    <div class="u_text">查看详情</div>
+					                    <div class="u_mask"></div>
+					                    <div class="score"><span class="score_num">6.7</span></div>
+					                  </a>
+					                  <h4>银河护卫队2<br>
+					                  </h4>
+					                </li>
+					                <li>
+					                  <a class="u_cover" href="details.html">
+					                    <img src=http://img01.wiseweb.com.cn/view/movie_poster_cover/lpst/public/p2459600525.jpg>
+					                    <div class="u_text">查看详情</div>
+					                    <div class="u_mask"></div>
+					                    <div class="score"><span class="score_num">6.2</span></div>
+					                  </a>
+					                  <h4>哆啦A梦：大雄的南...<br>
+					                  </h4>
+					                </li>
+					                <li>
+					                  <a class="u_cover" href="details.html">
+					                    <img src=http://img01.wiseweb.com.cn/view/movie_poster_cover/lpst/public/p2456056900.jpg>
+					                    <div class="u_text">查看详情</div>
+					                    <div class="u_mask"></div>
+					                    <div class="score"><span class="score_num">6.7</span></div>
+					                  </a>
+					                  <h4>春娇救志明<br>
+					                  </h4>
+					                </li>
+					                <li>
+					                  <a class="u_cover" href="details.html">
+					                    <img src=http://img01.wiseweb.com.cn/view/movie_poster_cover/lpst/public/p2454868217.jpg>
+					                    <div class="u_text">查看详情</div>
+					                    <div class="u_mask"></div>
+					                    <div class="score"><span class="score_num">6.7</span></div>
+					                  </a>
+					                  <h4>拆弹专家<br>
+					                  </h4>
+					                </li>
+					                <li>
+					                  <a class="u_cover" href="details.html">
+					                    <img src=http://img01.wiseweb.com.cn/view/movie_poster_cover/lpst/public/p2456571580.jpg>
+					                    <div class="u_text">查看详情</div>
+					                    <div class="u_mask"></div>
+					                    <div class="score"><span class="score_num">5.9</span></div>
+					                  </a>
+					                  <h4>异星觉醒<br>
+					                  </h4>
+					                </li>
+					                <li>
+					                  <a class="u_cover" href="details.html">
+					                    <img src=http://img01.wiseweb.com.cn/view/movie_poster_cover/lpst/public/p2455156816.jpg>
+					                    <div class="u_text">查看详情</div>
+					                    <div class="u_mask"></div>
+					                    <div class="score"><span class="score_num">6.7</span></div>
+					                  </a>
+					                  <h4>记忆大师<br>
+					                  </h4>
+					                </li>
+					                <li>
+					                  <a class="u_cover" href="details.html">
+					                    <img src=http://img01.wiseweb.com.cn/view/movie_poster_cover/lpst/public/p2459663581.jpg>
+					                    <div class="u_text">查看详情</div>
+					                    <div class="u_mask"></div>
+					                    <div class="score"><span class="score_num">6.7</span></div>
+					                  </a>
+					                  <h4>荡寇风云<br>
+					                  </h4>
+					                </li>
+					              </ul>
+					            </div>
+					          </div>
+					        </div>
+					      </div>
+					    </div>
+					  </div>
+					</div>
+					<div class="col-md-12 col-sm-12 col-xs-12 pageBox">
+						<nav aria-label="Page navigation">
+						  <ul class="pagination pagination-sm">
+						    <li class="disabled">
+						      <a href="#" aria-label="Previous">
+						        <span aria-hidden="true">&laquo;</span>
+						      </a>
+						    </li>
+						    <li class="active"><a href="#">1<span class="sr-only">(current)</span></a></li>
+						    <li><a href="#">2</a></li>
+						    <li><a href="#">3</a></li>
+						    <li><a href="#">4</a></li>
+						    <li><a href="#">5</a></li>
+						    <li>
+						      <a href="#" aria-label="Next">
+						        <span aria-hidden="true">&raquo;</span>
+						      </a>
+						    </li>
+						  </ul>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<footer class="footer" id="atatat" style="position:relative;">
+    <div id="back-top">
+        <a class="qr-code" href="javascript:void(0);"></a>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-8">
+                <ul class="footer_list">
+                    <li>版权信息</li>
+                    <li class="pubLi"> 中科天玑云略数据科技（北京）有限公司 京ICP备16062730号-1 | Copyright©2017</li>
+                    <li class="pubLi"> 公司地址: 北京市海淀区中关村新科祥园甲2号楼3层01号</li>
+                    <li class="pubLi"> Email: incloudmarketing@incloudict.com</li>
+                    <li class="pubLi"> 咨询服务: 010-5107 7529</li>
+                </ul>
+            </div>
+          <div class="col-xs-4">
+            <ul class="footer_list">
+              <li>云略公众号</li>
+              <li style="margin-top: 15px;"><a href="#"><img style="width: 8em;height: 8em;" src="http://www1.incloudict.com/upload/images/201701/14839706785575.png"></a></li>
+            </ul>
+          </div>
+        </div>
+    </div>
+</footer>
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/main.js" ></script>
+</body>
+</html>

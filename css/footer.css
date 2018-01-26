@@ -1,0 +1,93 @@
+/*需要引用 footer.ejs、bootstrap.css、close.less、modal.less、type.less、component-animation.less、verdor-prefixes.less、tiger-skin.css、gird.less、*/
+.footer {
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-top: 20px solid #3498db;
+  font:18px "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei"
+}
+
+.footer .container {
+  padding-top: 45px;
+  padding-bottom: 25px;
+  width: 1000px !important;
+}
+
+.footer ul .pubLi {
+  color: #ddd;
+  font-size: 14px;
+  line-height: 25px;
+  margin-top: 10px;
+}
+
+#back-top {
+  width: 60px;
+  position: fixed;
+  right: 50px;
+  bottom: 50px;
+  z-index: 5;
+}
+
+.back-top,
+.qr-code {
+  background: url(../img/ico_flag.png) no-repeat #ccc;
+  text-indent: -9999px;
+  overflow: hidden;
+  margin-top: 5px;
+  display: block;
+  cursor: pointer;
+  height: 50px;
+  width: 60px;
+}
+
+.back-top {
+  background-position: 0 -119px;
+}
+
+.qr-code {
+  background-position: 0 0;
+}
+
+.qr-code:hover {
+  background-position: 0 -59px;
+}
+
+.feedback {
+  color: #000 !important;
+  width: 59px !important;
+  height: 42px !important;
+  background-color: #959595 !important;
+  position: fixed !important;
+  bottom: 3px !important;
+  right: 51px !important;
+  font-size: 12px !important;
+  border-radius: 2px !important;
+  border: none !important;
+  padding-left: 6px !important;
+}
+
+.feedback:hover, .feedback:active, .feedback:focus {
+  background-color: #666 !important;
+}
+.feedback:hover span,.feedback:active span,.feedback:focus span{
+  color: #fff !important;
+}
+.feedback span{
+  font-size: 12px;
+  margin-left: 0;
+  color: #333;
+}
+#ScanMicro {
+  position: fixed;
+  right: 115px;
+  bottom: 50px;
+  border: 1px solid #eee;
+  background-color: #fff;
+  padding: 9px 9px 0;
+  display: none;
+}
+
+#ScanMicro p {
+  font-size: 16px;
+  text-align: center;
+  color: #000;
+}

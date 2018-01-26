@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1.0" />
+		<title>注册</title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+	</head>
+	<body>
+		<div class="box">
+			<div class="login-box">
+				<div class="login-title text-center">
+					<h1><small>注 册</small></h1>
+				</div>
+				<div class="login-content signupContent">
+					<div class="form signupForm">
+						<form action="" method="post">
+							<div class="form-group">
+								<div class="col-xs-12">
+									<div class="input-group">
+										<span class="input-group-addon"><span class="glyphicon glyphicon-user"></span></span>
+										<input type="text" id="username" name="username" class="form-control" placeholder="请输入手机号或邮箱">
+									</div>
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="col-xs-8">
+									<div class="input-group">
+										<span class="input-group-addon"><span class="glyphicon glyphicon-send"></span></span>
+										<input type="text" id="code" name="code" class="form-control" placeholder="请输入获取的验证码">
+									</div>
+								</div>
+								<div class="col-xs-4 codeBtn">
+									<input type="button" onclick="settime(this)" value="获取验证码">
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="col-xs-12  ">
+									<div class="input-group">
+										<span class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></span>
+										<input type="password" id="password" name="password" class="form-control" placeholder="请设置密码">
+									</div>
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="col-xs-12  ">
+									<div class="input-group">
+										<span class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></span>
+										<input type="password" id="comfirmPassword" name="comfirmPassword" class="form-control" placeholder="请再次输入密码确认">
+									</div>
+								</div>
+							</div>
+							<div class="form-group form-actions">
+								<div class="col-xs-12 backLogin">
+									<label for="cheFor">
+										<input type="checkbox" id="cheFor" checked="checked"/>我已认真阅读并接受云略<a href="#">《服务条款》</a>及<a href="#">《免责声明》</a>
+									</label>
+									<a href="login.html">〈 返回登录</a>
+								</div>
+							</div>
+							<div class="form-group form-actions">
+								<div class="col-xs-12 loginbtnbox">
+									<button type="button" class="btn btn-info btn-sm">注 册</button>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="js/jquery.min.js"></script>
+		<script>
+			var countdown=60; 
+			function settime(obj) {
+				$(obj).css("background","#999");
+			    if (countdown == 0) { 
+			        $(obj).removeAttr("disabled");    
+			        $(obj).val("重新获取"); 
+					$(obj).css("background","#3498db");
+			        countdown = 60; 
+			        return;
+			    } else { 
+			        $(obj).attr("disabled", true); 
+			        $(obj).val("重新发送(" + countdown + ")"); 
+			        countdown--; 
+			    } 
+				setTimeout(function(){settime(obj)},1000) 
+			}
+		</script>
+	</body>
+</html>

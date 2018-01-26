@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html  class="kol-style">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta name=viewport content="width=device-width,initial-scale=1">
+    <meta name="keywords" content=""/>
+    <meta name="description" content="" />
+    <link rel="shortcut icon" href="../img/fav.ico">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/footer.css"/>
+    <link rel="stylesheet" href="../css/jquery.city.css" />
+	<title>云略大数据</title>
+	<link rel="stylesheet" href="../css/index.css">
+	<link rel="stylesheet" href="../css/bootstrap-datetimepicker.min.css" />
+	<meta name="viewport"content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+</head>
+<body style="background: #f2f6f7;">
+<nav class="navbar navbar-inverse navbar-fixed-top" style="min-height:66px;background-color:#eee;">
+    <div class="container" style="width: 1220px!important;">
+        <div class="navbar-header">
+            <img style="width:160px;height:40px;margin-top: 13px" class="brand" alt="Brand" src="../img/logo.png">
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav" style="margin-left:50px;" id="menu">
+                <li><a href="../index.html">首页</a><span></span></li>
+                <li><a href="../movie.html">电影</a><span></span></li>
+                <li><a href="../tv.html">电视剧</a><span></span></li>
+              	<li><a href="../variety.html" >综艺</a><span></span></li>
+              	<li class="kolLi">
+              		<a href="javascript:;" >KOL</a><span class="actSpan"></span>
+              		<ul>
+              			<li><a href="../kol/wxList.html">微信榜单</a></li>
+              			<li><a href="../kol/wbList.html">微博榜单</a></li>
+              			<li><a href="../kol/whList.html">网红榜单</a></li>
+              		</ul>
+              	</li>
+              	<li><a href="../ylIndex/ylIndex.html" >云略指数</a><span></span></li>
+            </ul>
+          <div class="vipBox">
+          	<div class="labelBox">
+          		<label> <a href="../login.html">登 陆</a> </label> <label>|</label> 
+          		<label> <a href="../signup.html">注 册</a> </label>
+          	</div>
+          	<div class="infoBox" style="display: none;">
+          		<div class="userInfo"><a href="#" class="pubA"><span class="glyphicon glyphicon-user"></span> 240788020@qq.com</a></div>
+          		<div class="setDiv"><a href="#" class="pubA"><span class="setspan"><span class="glyphicon glyphicon-cog"></span> 个人中心</span></a> <a href="#" class="pubA"><span class="bakeOut"> 退 出</span></a></div>
+          	</div>
+          </div>
+          <div class="navbar-form navbar-right search-form search-frame " role="search">
+            <div class="form-group search-frame-in" >
+              <div id="search-form"></div>
+              </div>
+          </div>
+        </div>
+    </div>
+</nav>
+<div class="container wxBox">
+	<div class="row">
+		<div class="col-md-12 col-sm-12 col-xs-12 tabList">
+			<a href="javascript:;" class="actList">微信榜单</a>
+			<a href="../kol/wbList.html">微博榜单</a>
+			<a href="../kol/whList.html">网红榜单</a>
+		</div>
+		<div class="col-md-12 col-sm-12 col-xs-12 tips">
+			<h4>微信公众号 <label class="timeshow"></label> 总榜<span>统计截止：<label class="timeshow"></label> 15时整 样本数：64万+</span></h4>
+			<div class="chooseTerm">
+				<div class="btn-group terms pubterm" role="group">
+					<a href="javascript:;" class="acta" data-name="day">日榜</a>
+					<a href="javascript:;" data-name="week">周榜</a>
+					<a href="javascript:;" data-name="month">月榜</a>
+				</div>
+				<div class="pubterm">
+					<div class="timeBox">
+						<input type="text" name="format_day" class="form-control js_date form_datetime"  readonly=""><i class="glyphicon glyphicon-calendar"></i>
+						<select name="format_week" class="form-control widthweek">
+		                </select>
+		                <select name="format_month" class="form-control widthmonth">
+                        </select>
+					</div>
+				</div>
+				<div class="pubterm sorts">
+					<div class="sortsTips">
+						<label>分类</label>
+						<div class="sortsBox">
+							<button type="button" class="btnSorts"><span class="word" id="types">全部</span> <span class="caret"></span></button>
+							<ul id="select-typs" class="dropdown-menu more">
+                                    <li data-value="全部">全部</li>
+                                    <li data-value="政务">政务</li>
+                                    <li data-value="时事">时事</li>
+                                    <li data-value="文化">文化</li>
+                                    <li data-value="生活">生活</li>
+                                    <li data-value="健康">健康</li>
+                                    <li data-value="美食">美食</li>
+                                    <li data-value="时尚">时尚</li>
+                                    <li data-value="旅行">旅行</li>
+                                    <li data-value="母婴">母婴</li>
+                                    <li data-value="科技">科技</li>
+                                    <li data-value="创业">创业</li>
+                                    <li data-value="职场">职场</li>
+                                    <li data-value="娱乐">娱乐</li>
+                                    <li data-value="搞笑">搞笑</li>
+                                    <li data-value="动漫">动漫</li>
+                                    <li data-value="游戏">游戏</li>
+                                    <li data-value="体育">体育</li>
+                                    <li data-value="汽车">汽车</li>
+                                    <li data-value="金融">金融</li>
+                                    <li data-value="房产">房产</li>
+                                    <li data-value="教育">教育</li>
+                                    <li data-value="民生">民生</li>
+                                    <li data-value="企业">企业</li>
+                                    <li data-value="其他">其他</li>
+                            </ul>
+						</div>
+					</div>
+				</div>
+				<div class="pubterm">
+					<div class="cityBox">
+						<label>地域</label><input type="text" id="fromcity" name="city" class="form-control" value="选择城市" readonly="">
+						<i class="glyphicon glyphicon-map-marker"></i>
+					</div>
+				</div>
+			</div>
+			<table class="table table-hover tableBox">
+		      <thead>
+		        <tr>
+		          <th>排名</th>
+		          <th>公众号</th>
+		          <th>发布</th>
+		          <th>总阅读数</th>
+		          <th>头条阅读</th>
+		          <th>平均阅读</th>
+		          <th>总点赞数</th>
+		        </tr>
+		      </thead>
+		      <tbody>
+		        <tr>
+		          <th>1</th>
+		          <td>
+		          	<a href="wxDetails.html">
+		          		<div class="img-name">
+			         		<div class="imgleft" style="background:url(http://open.weixin.qq.com/qr/code/?username=rmrbwx) -85px -85px no-repeat;background-size:215px 215px;"></div>
+			         		<div class="nameright">
+			         			<h1>人民日报</h1>
+			         			<span class="">rmrbwx</span>
+			         		</div>
+			          	</div>
+		          	</a>
+		          </td>
+		          <td>7/16</td>
+		          <td>160万+</td>
+		          <td>70万+</td>
+		          <td>10万+</td>
+		          <td>87852</td>
+		        </tr>
+		        <tr>
+		          <th>2</th>
+		          <td>
+		          	<a href="wxDetails.html">
+		          		<div class="img-name">
+			         		<div class="imgleft" style="background:url(http://open.weixin.qq.com/qr/code/?username=rmrbwx) -85px -85px no-repeat;background-size:215px 215px;"></div>
+			         		<div class="nameright">
+			         			<h1>人民日报</h1>
+			         			<span class="">rmrbwx</span>
+			         		</div>
+			          	</div>
+		          	</a>
+		          </td>
+		          <td>7/16</td>
+		          <td>160万+</td>
+		          <td>70万+</td>
+		          <td>10万+</td>
+		          <td>87852</td>
+		        </tr>
+		        <tr>
+		          <th>3</th>
+		          <td>
+		          	<a href="wxDetails.html">
+		          		<div class="img-name">
+			         		<div class="imgleft" style="background:url(http://open.weixin.qq.com/qr/code/?username=rmrbwx) -85px -85px no-repeat;background-size:215px 215px;"></div>
+			         		<div class="nameright">
+			         			<h1>人民日报</h1>
+			         			<span class="">rmrbwx</span>
+			         		</div>
+			          	</div>
+		          	</a>
+		          </td>
+		          <td>7/16</td>
+		          <td>160万+</td>
+		          <td>70万+</td>
+		          <td>10万+</td>
+		          <td>87852</td>
+		        </tr>
+		        <tr>
+		          <th>4</th>
+		          <td>
+		          	<a href="wxDetails.html">
+		          		<div class="img-name">
+			         		<div class="imgleft" style="background:url(http://open.weixin.qq.com/qr/code/?username=rmrbwx) -85px -85px no-repeat;background-size:215px 215px;"></div>
+			         		<div class="nameright">
+			         			<h1>人民日报</h1>
+			         			<span class="">rmrbwx</span>
+			         		</div>
+			          	</div>
+		          	</a>
+		          </td>
+		          <td>7/16</td>
+		          <td>160万+</td>
+		          <td>70万+</td>
+		          <td>10万+</td>
+		          <td>87852</td>
+		        </tr>
+		        <tr>
+		          <th>5</th>
+		          <td>
+		          	<a href="wxDetails.html">
+		          		<div class="img-name">
+			         		<div class="imgleft" style="background:url(http://open.weixin.qq.com/qr/code/?username=rmrbwx) -85px -85px no-repeat;background-size:215px 215px;"></div>
+			         		<div class="nameright">
+			         			<h1>人民日报</h1>
+			         			<span class="">rmrbwx</span>
+			         		</div>
+			          	</div>
+		          	</a>
+		          </td>
+		          <td>7/16</td>
+		          <td>160万+</td>
+		          <td>70万+</td>
+		          <td>10万+</td>
+		          <td>87852</td>
+		        </tr>
+		      </tbody>
+		    </table>
+		</div>
+	</div>
+</div>
+<footer class="footer" id="atatat" style="position:relative;">
+    <div id="back-top">
+        <a class="qr-code" href="javascript:void(0);"></a>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-8">
+                <ul class="footer_list">
+                    <li>版权信息</li>
+                    <li class="pubLi"> 中科天玑云略数据科技（北京）有限公司 京ICP备16062730号-1 | Copyright©2017</li>
+                    <li class="pubLi"> 公司地址: 北京市海淀区中关村新科祥园甲2号楼3层01号</li>
+                    <li class="pubLi"> Email: incloudmarketing@incloudict.com</li>
+                    <li class="pubLi"> 咨询服务: 010-5107 7529</li>
+                </ul>
+            </div>
+          <div class="col-xs-4">
+            <ul class="footer_list">
+              <li>云略公众号</li>
+              <li style="margin-top: 15px;"><a href="#"><img style="width: 8em;height: 8em;" src="http://www1.incloudict.com/upload/images/201701/14839706785575.png"></a></li>
+            </ul>
+          </div>
+        </div>
+    </div>
+</footer>
+<script src="../js/jquery.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/search.js"></script>
+<script src="../js/main.js" ></script>
+<script src="../js/jquery.city.js" ></script>
+<script src="../js/bootstrap-datetimepicker.min.js" ></script>
+<script src="../js/bootstrap-datetimepicker.zh-CN.js" ></script>
+<script>
+	$(function(){
+		 var newDate = new Date();
+		 var t= newDate.toJSON();
+		 $(".form_datetime").datetimepicker({
+	        format: 'yyyy-mm-dd',
+	        minView:'month',
+	        language: 'zh-CN',
+	        autoclose:true,
+	        todayBtn: true,
+	        endDate:new Date(t),
+	    })
+		$('#fromcity').jcity({
+            urlOrData: '../city.json',
+            animate: { showClass: 'animated flipInX', hideClass: 'animated flipOutX' }
+       });
+	});
+    var proposals = [];
+    $.ajax({
+		url:'../js/test.json',
+		type:'get',
+		success:function(datas){
+			datas=eval(datas);
+			var lilen=datas.Names.length;
+			var liTxt=datas.Names;
+			for(var i=0;i<lilen;i++){
+				var liVal=liTxt[i].name;
+				proposals.push(liVal);
+				id=liTxt[i].id;
+			}
+		}
+	})
+	$("#search-form").autocomplete({
+		hints: proposals
+	});
+</script>
+</body>
+</html>

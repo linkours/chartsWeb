@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html  class="kol-style">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta name=viewport content="width=device-width,initial-scale=1">
+    <meta name="keywords" content=""/>
+    <meta name="description" content="" />
+    <link rel="shortcut icon" href="../img/fav.ico">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+	<title>云略大数据</title>
+	<link rel="stylesheet" href="../css/index.css">
+	<meta name="viewport"content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+</head>
+<body style="background: url(../img/mp-bg.jpg) center no-repeat;">
+<nav class="navbar navbar-inverse navbar-fixed-top" style="min-height:66px;background:none;">
+    <div class="container" style="width: 1220px!important;">
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav indexUlBox" id="menu">
+                <li><a href="../index.html">首页</a><span></span></li>
+                <li><a href="../movie.html">电影</a><span></span></li>
+                <li><a href="../tv.html">电视剧</a><span></span></li>
+              	<li><a href="../variety.html" >综艺</a><span></span></li>
+              	<li class="kolLi">
+              		<a href="javascript:;" >KOL</a><span></span>
+              		<ul>
+              			<li><a href="../kol/wxList.html">微信榜单</a></li>
+              			<li><a href="../kol/wbList.html">微博榜单</a></li>
+              			<li><a href="../kol/whList.html">网红榜单</a></li>
+              		</ul>
+              	</li>
+              	<li><a href="javascript:;" >云略指数</a><span></span></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div class="container indexContainer">
+	<div class="schBox" id="search-form">
+	</div>
+</div>
+<script src="../js/jquery.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/ylIndex.js" ></script>
+<script>
+	$(function(){
+		var proposals = [];
+	    $.ajax({
+			url:'../js/test.json',
+			type:'get',
+			success:function(datas){
+				datas=eval(datas);
+				var lilen=datas.Names.length;
+				var liTxt=datas.Names;
+				for(var i=0;i<lilen;i++){
+					var liVal=liTxt[i].name;
+					proposals.push(liVal);
+					id=liTxt[i].id;
+				}
+			}
+		})
+		$("#search-form").autocomplete({
+			hints: proposals
+		});
+		//鼠标悬停子菜单
+	    $(".kolLi").hover(function(){
+	    	$(".kolLi ul").show("fast");
+	    },function(){
+	    	$(".kolLi ul").hide("fast");
+	    });
+	    $(".head_search").click(function(){
+	    	window.location.href="indexDetails.html";
+	    });
+	});
+</script>
+</body>
+</html>
